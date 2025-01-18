@@ -1,7 +1,7 @@
 # wol_api_docker
 HTTP server for WOL using an API key.
 
-I've set up this little project to work with my Moonlight fork (coming soon) so that I can wake up my PC remotely, directly from the application and transparently.
+I've set up this little project to work with my Moonlight fork (coming soon) so that I can wake up my PC outside my local network, directly from the application and transparently.
 
 
 To build the Docker image: 
