@@ -10,5 +10,11 @@ To run the container: docker run -d -p 8080:8080 -e API_KEY=your_secret_key -e M
 
 If you use Docker Compose: docker-compose up --build
 
+To wake up the computer:
+
+curl -X POST http://<votre_ip>:8080/wake \
+-H "Content-Type: application/json" \
+-d '{"key":"your_secret_key"}'
+
 
 ⚠️ This solution is sufficiently secure for my purposes. If you want even greater security, solutions like https://github.com/andygrundman/tailscale-wakeonlan are available.
