@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  wake-on-lan:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - API_KEY=your_secret_key
+      - MAC_ADDRESS=XX:XX:XX:XX:XX:XX
+    ports:
+      - "8080:8080"
